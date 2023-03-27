@@ -37,7 +37,7 @@ public class SingletonTest {
 
     @Test
     @DisplayName("스프링 컨테이너와 싱글톤")
-    void singletonServiceTest() {
+    void singletonContainer() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService1 = ac.getBean("memberService", MemberService.class);
         MemberService memberService2 = ac.getBean("memberService", MemberService.class);
